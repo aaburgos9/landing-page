@@ -14,6 +14,7 @@
   <link href="assets/img/isotipo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -25,6 +26,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/swiper.css" rel="stylesheet">
+
 
   <!-- =======================================================
   * Template Name: Fabrica de Software - v2.0.0
@@ -83,8 +86,10 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
 
-    <div class="container">
-      <div class="row d-flex align-items-center"">
+    <div class="swiper-container-banner">
+      <div class="swiper-wrapper">
+     <div class="swiper-slide-banner">
+      <div class="row d-flex align-items-center">
       <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
         <h1>Tu nueva experiencia digital con Fabrica de Software</h1>
         <h2>We are team of talanted designers making websites with Bootstrap</h2>
@@ -95,6 +100,14 @@
       </div>
     </div>
     </div>
+   </div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
 
   </section><!-- End Hero -->
 
@@ -586,56 +599,145 @@ en algo tangible.
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="fade-in">Pricing</h2>
+          <h2 data-aos="fade-in">Precios</h2>
           <p data-aos="fade-in">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
-
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" >
         <div class="row no-gutters">
 
           <div class="col-lg-4 box" data-aos="zoom-in">
-            <h3>Free</h3>
-            <h4>$0<span>per month</span></h4>
+            <h4 style="font-style: 18px !important;"><i class="fa fa-rocket" aria-hidden="true"> LANDING PAGE</i>
+            </h4>
+            <h4>$1.200.000 cop <span><i class="fa fa-file-o" aria-hidden="true"></i>  Una sola página</span></h4>
             <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li class="na"><i class="bx bx-x"></i> <span>Pharetra massa massa ultricies</span></li>
-              <li class="na"><i class="bx bx-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              <li><i class="bx bx-check"></i> Dominio</li>
+              <li><i class="bx bx-check"></i> Certificado de seguridad SSL/año</li>
+              <li><i class="bx bx-check"></i> hosting</li>
+              <li class="na"><i class="bx bx-x"></i> <span>correos corporativos</span></li>
+              <li class="na"><i class="bx bx-x"></i> <span>Dominio adicional</span></li>
             </ul>
-            <a href="#" class="get-started-btn">Empezar</a>
+            <a href="#" class="get-started-btn">Mas informacion</a>
           </div>
 
           <div class="col-lg-4 box featured" data-aos="zoom-in">
-            <span class="featured-badge">Featured</span>
-            <h3>Business</h3>
-            <h4>$29<span>per month</span></h4>
+            <span class="featured-badge">Planes Desarrollo web</span>
+            <h4><i class="fa fa-globe" aria-hidden="true"></i> WEB CORPORATIVA</h4>
+            <h4>3.500.000 cop<span><i class="fa fa-file-o" aria-hidden="true"></i>  5 página</span></h4>
             <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-              <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              <li><i class="bx bx-check"></i> Dominio</li>
+              <li><i class="bx bx-check"></i> Certificado de seguridad SSL/año</li>
+              <li><i class="bx bx-check"></i> hosting</li>
+              <li><i class="bx bx-check"></i> correos corporativos</li>
+              <li><i class="bx bx-check"></i> Dominio adicional</li>
             </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
+            <a href="#" class="get-started-btn">Mas informacion</a>
           </div>
 
           <div class="col-lg-4 box" data-aos="zoom-in">
-            <h3>Developer</h3>
-            <h4>$49<span>per month</span></h4>
+            <h4><i class="fa fa-shopping-cart"></i> TIENDA ONLINE</h4>
+            <h4>5.000.000 cop<span><i class="fa fa-file-o" aria-hidden="true"></i>  Páginas internas según nº de productos</span></h4>
             <ul>
-              <li><i class="bx bx-check"></i> Quam adipiscing vitae proin</li>
-              <li><i class="bx bx-check"></i> Nec feugiat nisl pretium</li>
-              <li><i class="bx bx-check"></i> Nulla at volutpat diam uteera</li>
-              <li><i class="bx bx-check"></i> Pharetra massa massa ultricies</li>
-              <li><i class="bx bx-check"></i> Massa ultricies mi quis hendrerit</li>
+              <li><i class="bx bx-check"></i> Dominio</li>
+              <li><i class="bx bx-check"></i> Certificado de seguridad SSL/año</li>
+              <li><i class="bx bx-check"></i> hosting</li>
+              <li><i class="bx bx-check"></i> correos corporativos</li>
+              <li><i class="bx bx-check"></i> Dominio adicional</li>
             </ul>
-            <a href="#" class="get-started-btn">Get Started</a>
+            <a href="#" class="get-started-btn">Mas informacion</a>
           </div>
 
-        </div>
+        </div></div>  
 
+        <div class="swiper-slide" >
+          <div class="row no-gutters">
+  
+            <div class="col-lg-4 box" data-aos="zoom-in">
+              <h4 style="font-style: 18px !important;"><i class="fa fa-rocket" aria-hidden="true"> LANDING PAGE</i>
+              </h4>
+              <h4>$1.200.000 cop <span><i class="fa fa-file-o" aria-hidden="true"></i>  Una sola página</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Dominio</li>
+                <li><i class="bx bx-check"></i> Certificado de seguridad SSL/año</li>
+                <li><i class="bx bx-check"></i> hosting</li>
+                <li class="na"><i class="bx bx-x"></i> <span>correos corporativos</span></li>
+                <li class="na"><i class="bx bx-x"></i> <span>Dominio adicional</span></li>
+              </ul>
+              <a href="#" class="get-started-btn">Mas informacion</a>
+            </div>
+  
+            <div class="col-lg-4 box featured" data-aos="zoom-in">
+              <span class="featured-badge">Planes Desarrollo web</span>
+              <h4><i class="fa fa-globe" aria-hidden="true"></i> WEB CORPORATIVA</h4>
+              <h4>3.500.000 cop<span><i class="fa fa-file-o" aria-hidden="true"></i>  5 página</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Dominio</li>
+                <li><i class="bx bx-check"></i> Certificado de seguridad SSL/año</li>
+                <li><i class="bx bx-check"></i> hosting</li>
+                <li><i class="bx bx-check"></i> correos corporativos</li>
+                <li><i class="bx bx-check"></i> Dominio adicional</li>
+              </ul>
+              <a href="#" class="get-started-btn">Mas informacion</a>
+            </div>
+  
+            <div class="col-lg-4 box" data-aos="zoom-in">
+              <h4><i class="fa fa-shopping-cart"></i> TIENDA ONLINE</h4>
+              <h4>5.000.000 cop<span><i class="fa fa-file-o" aria-hidden="true"></i>  Páginas internas según nº de productos</span></h4>
+              <ul>
+                <li><i class="bx bx-check"></i> Dominio</li>
+                <li><i class="bx bx-check"></i> Certificado de seguridad SSL/año</li>
+                <li><i class="bx bx-check"></i> hosting</li>
+                <li><i class="bx bx-check"></i> correos corporativos</li>
+                <li><i class="bx bx-check"></i> Dominio adicional</li>
+              </ul>
+              <a href="#" class="get-started-btn">Mas informacion</a>
+            </div>
+  
+          </div></div> 
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  
       </div>
     </section><!-- End Pricing Section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
@@ -844,6 +946,42 @@ en algo tangible.
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/swiper.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+
+    var swiper = new Swiper('.swiper-container-banner', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    </script>
 
 </body>
 
