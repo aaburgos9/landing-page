@@ -97,7 +97,7 @@ jQuery(document).ready(function($) {
 
     if( ! action ) {
       this_form.find('.loading').slideUp();
-      this_form.find('.error-message').slideDown().html('The form action property is not set!');
+      this_form.find('.error-message').slideDown().html('¡La propiedad de acción de formulario no está establecida!');
       return false;
     }
     
