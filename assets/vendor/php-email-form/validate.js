@@ -124,3 +124,88 @@ jQuery(document).ready(function($) {
   });
 
 });
+
+
+   /**
+     * Subscription form content frontpage
+     */
+    $('#subscribe-content').click(function(event) {
+      event.preventDefault();
+      var emailPersonToSubscribeContent = $('#mail-front-page-suscribed').val();
+      var checkchecked = $('#check-home-newsletter').prop('checked');
+
+      if (!validateEmail(emailPersonToSubscribeContent)) {
+          $('#error-form').html('<p>El email no es valido</p>');
+      } else if (!checkchecked) {
+          $('#error-form').html('<p>Acepte los términos y condiciones</p>');
+      } else {
+           console.log(emailPersonToSubscribeContent);
+          $.ajax({
+                  url: ajaxUrl,
+                  type: 'POST',
+                  dataType: 'json',
+                  data: {
+                      action: 'subscription_content_digital',
+                      nonce: ajaxNonce,
+                      email: emailPersonToSubscribeContent,
+                      habeasData: 'Acepto',
+                  },
+              })
+              .done(function(response) {
+                  console.log(response);
+                  if (response.success != true) {
+                      $('#error-form').html('<p>' + response.data.error + '</p>');
+                  } else {
+                      $('#error-form').hide('slow');
+                      swal(
+                          "Éxito!",
+                          response.data.success,
+                          "success"
+                      );
+                      $('#form-front-page-subscribed').closest('form').find('input[type=text], input[type=email], input[type=checkbox]').val('');
+                  }
+              })
+              .fail(function(response) {
+                  $('#error-form').html('<p>Ha ocurrido un errror, Por favor intentalo nuevamente </p>');
+              })
+      }
+  });
+
+  /**
+   * Subscription to events form
+   */
+  $('#save-mail-subscribe').click(function(event) {
+      event.preventDefault();
+      var emailPersonToEvent = $('#leave_us_your_email').val();
+
+      if (!validateEmail(emailPersonToEvent)) {
+          $('#error-form').html('<p>El email no es valido</p>');
+      } else {
+          $.ajax({
+                  url: ajaxUrl,
+                  type: 'POST',
+                  dataType: 'json',
+                  data: {
+                      action: 'subscription_to_events_and_workshops',
+                      nonce: ajaxNonce,
+                      email: emailPersonToEvent,
+                  },
+              })
+              .done(function(response) {
+                  if (response.success != true) {
+                      $('#error-form').html('<p>' + response.data.error + '</p>');
+                  } else {
+                      $('#error-form').hide('slow');
+                      swal(
+                          "Éxito!",
+                          response.data.success,
+                          "success"
+                      );
+                      $('#form-subscribe-events').closest('form').find('input[type=text], input[type=email]').val('');
+                  }
+              })
+              .fail(function(response) {
+                  $('#error-form').html('<p>Ha ocurrido un errror, Por favor intentalo nuevamente.</p>');
+              })
+      }
+  });
